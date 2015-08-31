@@ -1,0 +1,20 @@
+{
+  "name": "mdreact",
+  "version": "0.1.0",
+  "description": "MdReact is a jsx/React enabling plugin for Markdown-It",
+  "keywords": [
+    "markdown",
+    "react",
+    "commonmark",
+    "markdown-it",
+    "markdown-it-plugin"
+  ],
+  "homepage": "https://github.com/funkjunky/mdreact",
+  "repository": "funkjunky/mdreact",
+  "license": "GNUP",
+  "main": "react.js",
+  "dependencies": {
+    "react": "0.13.*",
+    "markdown-it": "1.6.*",
+  },
+}
