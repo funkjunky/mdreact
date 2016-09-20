@@ -12,7 +12,7 @@ var MdReact = function(md, options) {
             rules = this.rules;
 
         return tokens.reduce(function(collector, token, i) {
-            console.log('type: ', token.type, token);
+            //console.log('type: ', token.type, token);
             var result;
             if (typeof rules[token.type] !== 'undefined')
                 result = rules[token.type](tokens, i, options, env, this);
@@ -22,7 +22,7 @@ var MdReact = function(md, options) {
                 else
                     result = this.renderToken(tokens, i, options);
             }
-            console.log('result: ', result);
+            //console.log('result: ', result);
 
             function getCollector(collector, tokens, i) {
                 tokens.forEach(function(result) {
@@ -39,7 +39,7 @@ var MdReact = function(md, options) {
                         return;
                     }
 
-                    console.log('result isnt a string: ', result, collector.length);
+                    //console.log('result isnt a string: ', result, collector.length);
                     if(!collector.length || !collector[collector.length - 1].length)
                         collector.push([]);
 
