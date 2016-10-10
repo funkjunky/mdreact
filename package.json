@@ -1,6 +1,6 @@
 {
   "name": "mdreact",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "MdReact is a jsx/React enabling plugin for Markdown-It",
   "keywords": [
     "markdown",
