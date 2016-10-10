@@ -52,12 +52,12 @@ var MdReact = function(md, options) {
                 return getCollector(collector, result, i);
             else
                 return getCollector(collector, [result], i);
-        }.bind(this), []).map(function(item) {
+        }.bind(this), []).map(function(item, index) {
             //console.log('last step item: ', item);
             if(item.length) {
                 var html = item.join('');
                 //console.log('html: ', html);
-                return React.createElement("p", {dangerouslySetInnerHTML: {__html: html}})
+                return React.createElement("p", {key: index, dangerouslySetInnerHTML: {__html: html}})
             }
             else
                 return item;
